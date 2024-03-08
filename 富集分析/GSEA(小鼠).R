@@ -5,7 +5,7 @@ library(clusterProfiler)
 library(ggnewscale)
 library(org.Mm.eg.db)
 
-different_geneset <- read.csv( "李晓阳差异基因集/MB49_MeRIP_RIP_logfc1（gsea）.csv") 
+different_geneset <- read.csv( "file.csv") 
 gene <- different_geneset[,c(1,2)]
 colnames(gene)[1] <-"SYMBOL"
 GO_database <- 'org.Mm.eg.db'
